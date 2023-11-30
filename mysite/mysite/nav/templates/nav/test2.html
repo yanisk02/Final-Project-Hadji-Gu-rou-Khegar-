@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Projet Python</title>
+    <link rel="icon" type="image/png" href="{% static 'nav/bike.svg' %}" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      body {
+        background-color: #f3f5f9;
+      }
+
+      .wrapper {
+        display: flex;
+        position: relative;
+      }
+
+      .wrapper .sidebar {
+        width: 200px;
+        height: 100%;
+        background: #4b4276;
+        padding: 30px 0px;
+        position: fixed;
+      }
+
+      .wrapper .sidebar h2 {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .wrapper .sidebar ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .wrapper .sidebar ul li a {
+        color: #bdb8d7;
+        padding: 15px;
+        display: block;
+        white-space: nowrap;
+      }
+
+      .wrapper .sidebar ul li a .fas {
+        width: 25px;
+      }
+
+      .wrapper .sidebar ul li:hover {
+        background-color: #594f8d;
+      }
+
+      .wrapper .sidebar ul li:hover a {
+        color: #fff;
+      }
+
+      .wrapper .main_content {
+        width: 100%;
+        margin-left: 200px;
+      }
+
+      .wrapper .main_content .header {
+        padding: 20px;
+        background: #fff;
+        color: #717171;
+        border-bottom: 1px solid #e0e4e8;
+      }
+
+      .wrapper .main_content .info {
+        margin: 20px;
+        color: #717171;
+        line-height: 25px;
+      }
+
+      .wrapper .main_content .info div {
+        margin-bottom: 20px;
+      }
+
+      @media (max-height: 500px) {
+        .social_media {
+          display: none !important;
+        }
+      }
+      .esilv {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        margin: 5px 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .orl {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Python Project</h2>
+        <ul>
+          <li>
+            <a href="http://127.0.0.1:8000"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:8000/polls/Progress"
+              ><i class="fas fa-user"></i>Progress</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:8000/polls/About Us"
+              ><i class="fas fa-address-card"></i>About Us</a
+            >
+          </li>
+        </ul>
+        <div class="social_media">
+          <a href="https://www.esilv.fr/" target="_blank"
+            ><img class="esilv" src="{% static 'nav/ESILV.png' %}"
+          /></a>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="header">[message intro]</div>
+        <div class="info">
+          <div>[Texte]</div>
+          <div class="conte">[image]</div>
+          <div>[Texte]</div>
+          <div class="conte">[image]</div>
+          <div>[Texte]</div>
+          <div class="conte">[image]</div>
+          <div>[Texte]</div>
+          <div class="conte">[image]</div>
+          <div>[Texte]</div>
+          <div class="conte">[image]</div>
+        </div>
+      </div>
+    </div>
+    <img class="orl" src="{% static 'nav/fleurs.jpg' %}" />
+  </body>
+</html>

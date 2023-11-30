@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projet Python</title>
+    <link rel="icon" type="image/png" href="{% static 'nav/bike.svg' %}" />
+    <style>
+      body {
+        background-color: white;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #38444d;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="vertical">
+      <li>
+        <a href="http://127.0.0.1:8000">
+          <svg class="home" viewBox="0 0 50 50">
+            <path
+              d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"
+            />
+          </svg>
+          home
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:8000/polls/Carte de France">page1</a>
+      </li>
+      <li><a href="http://127.0.0.1:8000/polls/Covid">page2</a></li>
+      <li><a href="http://127.0.0.1:8000/polls/Histogramme">page3</a></li>
+      <li><a href="http://127.0.0.1:8000/polls/Camembert">page4</a></li>
+      <li><a href="http://127.0.0.1:8000/polls/TOP 10">page5</a></li>
+      <li><a href="http://127.0.0.1:8000/admin">admin</a></li>
+    </ul>
+    <div class="main">
+      <h1>Hello 👋</h1>
+      <h2>Fixed Full-height Side Nav</h2>
+      <h3>
+        Try to scroll this area, and see how the sidenav sticks to the page
+      </h3>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+  </body>
+</html>
